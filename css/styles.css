@@ -1,0 +1,287 @@
+@font-face {
+    font-family: 'gothic';
+    src: url(/fonts/gothic.ttf);
+}
+
+body {
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin: 0;
+}
+
+em {
+    font-style: normal;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+#banner {
+    width: 100;
+    display: flex;
+    background-color: black;
+    height: 50px;
+}
+
+#brand {
+    display: flex;
+    margin: auto;
+}
+
+.logo {
+    filter: invert(1);
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#banner-title {
+    color: white;
+    font-family: "gothic", cursive;
+    margin-top: 10px;
+    margin-right: 50px;
+    white-space: nowrap;
+
+}
+
+/* navigation menu general styling */
+
+.navbar {
+    display: flex;
+}
+
+.nav-items {
+    display: flex;
+    list-style-type: none;
+    font-family: "gothic", cursive;
+    padding: 0;
+}
+
+.nav-items li {
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    line-height: 50px;
+
+}
+
+.nav-items a {
+    font-size: inherit;
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+    padding: 7px;
+}
+
+/* container and button styles, hover color */
+
+.dropdown {
+    height: 50px;
+}
+
+.dropdown .dropbtn {
+    font-family: "gothic", cursive;
+    font-size: inherit;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    white-space: nowrap;
+    background-color: black;
+}
+
+.dropbtn {
+    border: none;
+    padding: 7px;
+    margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgb(24, 60, 75);
+    outline-color: rgb(255, 255, 255);
+    outline-style: solid;
+    outline-width: 1px;
+    border-radius: 7px 7px 7px 7px;
+
+}
+
+/* dropdown items style */
+
+.dropdown-content {
+    display: none;
+    background-color: black;
+    min-width: 200px;
+    /* absolute: doesn't interfere with the flow of the rest of things */
+    position: absolute;
+    /* make it stand out */
+    z-index: 1;
+    /* shadowing */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /* aligning */
+    margin-left: 0px;
+    margin-bottom: 105px;
+}
+
+/* drowdown items-links style */
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    /* links are displayed as blocks, just like the parent */
+    display: inherit;
+    text-align: center;
+    border-style: solid;
+    border-color: white 0.5px;
+}
+
+/* display content when hovered over */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* social media links styling */
+
+#links {
+    display: flex;
+    margin-left: auto;
+}
+
+#links-paragraph {
+    color: white;
+    font-family: "gothic", cursive;
+    padding: 0;
+    margin: auto;
+    white-space: nowrap;
+}
+
+#facebook {
+    width: 50px;
+    height: 50px;
+}
+
+#facebook-icon {
+    filter: invert(1);
+    width: 50px;
+    height: 50px;
+}
+
+#instagram {
+    width: 50px;
+    height: 50px;
+}
+
+#instagram-icon {
+    filter: invert(1);
+    width: 50px;
+    height: 50px;
+}
+
+.container-blue {
+    position: relative;
+    height: 300px;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(40, 105, 131);
+    font-family: "gothic", cursive;
+    text-align: left;
+    color: white;
+    overflow: hidden;
+}
+
+.welcome {
+    position: absolute;
+    top: 80px;
+    left: 20%;
+}
+
+.search-bar-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: normal;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+#searchbar {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    width: 500px;
+    height: 25px;
+    background-color: white;
+}
+
+#search-icon-wrapper:hover {
+    cursor: pointer;
+}
+
+#search-icon {
+    height: 26px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    background-color: white;
+}
+
+
+.first-section {
+    height: 400px;
+    background-color: rgb(230, 229, 229);
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.news-section {
+    margin: 0px 150px 0px 0px;
+    overflow-y: scroll;
+}
+
+.news {
+    width: 200px;
+}
+
+.merch-imgs {
+    display: flex;
+}
+
+.shirt {
+    object-fit: contain;
+    width: 200px;
+    height: 200px;
+    margin: 0px 10px 0px 0px;
+    outline: 3px black solid;
+}
+
+.second-section {
+    height: 400px;
+    background-color: rgb(40, 105, 131);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "gothic", cursive;
+}
+
+.music-video {
+    margin-left: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+}
+
+.page-footer {
+    height: 50px;
+    background-color: rgb(230, 229, 229);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
